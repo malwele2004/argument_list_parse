@@ -1,0 +1,15 @@
+#ifndef DEF
+#define DEF
+
+typedef struct {
+	int is_short;
+	char* option;
+	char* body;
+} arg_option ;
+
+typedef struct {
+	int nargs, noptions;
+	arg_option* aopt;
+} arg_list;
+
+#endif
