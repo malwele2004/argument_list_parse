@@ -53,7 +53,7 @@ make release ** Make libarglist.a in build directory **
         3. <arg_option*>
             Pointer to calloc allocated array
             of noptions Options
-## Functions
+## FUNCTIONS
     - Parse argument list (returns <arg_list>)
         arg_list_parse(<int>ArgumentCount,
                       <char**>ArgumentString,
@@ -87,7 +87,7 @@ make release ** Make libarglist.a in build directory **
         // Use arg_list
         // Deallocate it
 
-## notes
+## NOTES
     - Calls recursion of `main(int,char**)` or any function using `arg_list_parse(int,char**,int,char**)` should use it in each call and its family
     or functions
     - If changes or a different argc, argv are used
@@ -96,16 +96,16 @@ make release ** Make libarglist.a in build directory **
     - use `noptions` to know how many arguments supplied, when indexing
      arg_list options array
 
-## rules and precedence of flags
+## PRECEDENCE OF FLAGS
     1. Long arguments
     2. Long options
     3. Short options
 
-If -o long argument exists
-    -ogame is short option (ogame)
-Else
-    option (o), value(game)
+If -o long argument exists  
+    -ogame is short option (ogame)  
+Else   
+    option (o), value(game)  
 
-If f long option and short option exist
-    --f is long option
-    -f is short option
+If f long option and short option exist  
+    --f is long option  
+    -f is short option  
