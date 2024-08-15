@@ -1,7 +1,6 @@
 @Developer: JOSIAH KUNDA MAPALO MALWELE  
 @Name     : MALWELE   
-@Email    : josiahkundamapalo@gmail.com  
-            malwele085@gmail.com  
+@Email    : josiahkundamapalo@gmail.com, malwele085@gmail.com  
 @Purpose  : Parsing program argument lists made easy  
 @Licence  : GNU General Public Licence   
 
