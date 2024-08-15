@@ -1,22 +1,22 @@
-@Developer: JOSIAH KUNDA MAPALO MALWELE
-@Name     : MALWELE
-@Email    : josiahkundamapalo@gmail.com
-            malwele085@gmail.com
-@Purpose  : Parsing program argument lists made easy
-@Licence  : GNU General Public Licence
+@Developer: JOSIAH KUNDA MAPALO MALWELE  
+@Name     : MALWELE   
+@Email    : josiahkundamapalo@gmail.com  
+            malwele085@gmail.com  
+@Purpose  : Parsing program argument lists made easy  
+@Licence  : GNU General Public Licence   
 
 # ARGUMENT_LIST_PARSE
 ---
-What you need
+What you need  
     - linux (or unix based system)
     - make
     - gcc
     - ar
 
-git clone malwele2004/argument_list_parse
-cd argument_list_parse
-make debug ** Make debug in build directory **
-make release ** Make libarglist.a in build directory **
+git clone malwele2004/argument_list_parse  
+cd argument_list_parse  
+make debug ** Make debug in build directory **  
+make release ** Make libarglist.a in build directory **  
 
 ## TESTING
     make debug
