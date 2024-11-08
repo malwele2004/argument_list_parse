@@ -150,12 +150,15 @@ arg_list arg_list_parse(int argc, char** argv, int nlargs, char** long_args) {
 				args[i+1]
 				: NULL;
 
-				if (!value) {// No option given, ignore
+				if (!value) {// No option given, Single Option parse and special parse
 					if (!is_long_argument && is_short && strlen(option)>1) { // parsing fused short option and value pairs
 						value = option + 1; // get value
 						change_arg_option(&alist.aopt[option_count],is_short,NULL,value,option[0]);
-						option_count++; // Added option
+					} else { // ** 10:17 AM OF 8/11/24 MALWELE CHANGES ** //
+						change_arg_option(&alist.aopt[option_count], is_short, option, NULL, 0);
 					}
+					option_count++; // Added option
+					// ** END OF 10:17 AM CHANGE **//
 					i++; // Move past flag
 					break;
 				}
