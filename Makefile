@@ -22,8 +22,11 @@ $(BUILD_TEST): $(BIN_PARSE) $(BIN_MAIN)
 $(BUILD_STATIC): $(BIN_PARSE)
 	ar rcs $@ $^
 
-debug:
+prepare:
+	-mkdir bin build || true
+
+debug: prepare
 	$(MAKE) $(BUILD_TEST)
 
-release:
+release: prepare
 	$(MAKE) $(BUILD_STATIC)
